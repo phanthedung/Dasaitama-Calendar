@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Calendarクラスに関する文字列変数 -->
+	<string
+		name="app_name"
+	>カレンダー</string>
+	<string
+		name="btnViewRoute"
+	>ルートを見る</string>
+	<string
+		name="btnSelectLocation"
+	>目的地店を決定</string>
+	<string
+		name="btnMonthView"
+	>予定月一覧</string>
+	<string
+		name="btnDayView"
+	>予定火付け一覧</string>
+	
+	<string
+		name="maz_api"
+	> 0lN4Mp6v5ZzciqJTTQUPp8ypMTKFkoNzb-iMaLA</string>
+	
+	<string
+		name="zung_api"
+	>09EPqJKzJGLvjE6o3xD39hjFvGxZ5jDj1zZMzmw</string>
+
+<string
+		name="yokota_api"
+	>0EhY9BS4Cuy-xsJ8BPVUTyUHhFZbkxEfKYgDtzg</string>
+
+	<!-- SelectLocationクラスに関する文字列変数 -->
+	<string
+		name="selectLocationAct_name"
+	>地点決定</string>
+	<string
+		name="selectAddress"
+	>地名を入力</string>
+	<string
+		name="btnSearchAddress"
+	>検索</string>
+	<string
+		name="btnSelectAddress"
+	>決定</string>
+
+	<!-- ViewRouteクラスに関する文字列変数 -->
+	<string
+		name="btnViewRouteReturn"
+	>戻る</string>
+	<string
+		name="viewRouteAct_name"
+	>ルート案内</string>
+	<string
+		name="MonthViewAct_name"
+	>月一覧</string>
+	<string
+		name="DayViewAct_name"
+	>予定日付一覧</string>
+
+
+	<!-- SearchTransitクラスに関する文字列変数-->
+	<string
+		name="SearchTransit_name"
+	>ルート検索</string>
+	<string
+		name="scroll_view_1_text_1"
+	>Text View 1</string>
+	<string
+		name="scroll_view_1_button_1"
+	>Button 1</string>
+	<string
+		name="scroll_view_1_text_2"
+	>Text View 2</string>
+	<string
+		name="scroll_view_1_button_2"
+	>Button 2</string>
+	<string
+		name="scroll_view_1_text_3"
+	>Text View 3</string>
+	<string
+		name="scroll_view_1_button_3"
+	>Button 3</string>
+	<string
+		name="scroll_view_1_text_4"
+	>Text View 4</string>
+	<string
+		name="scroll_view_1_button_4"
+	>Button 4</string>
+	<string
+		name="scroll_view_1_text_5"
+	>Text View 5</string>
+	<string
+		name="scroll_view_1_button_5"
+	>Button 5</string>
+	<string
+		name="scroll_view_1_text_6"
+	>Text View 6</string>
+	<string
+		name="scroll_view_1_button_6"
+	>Button 6</string>
+	<string
+		name="scroll_view_2_text_1"
+	>Text View 1</string>
+	<string
+		name="scroll_view_2_button_1"
+	>Button 1</string>
+	<string
+		name="scrollbar_1_text"
+	>Lorem ipsum dolor sit amet.</string>
+	<string
+		name="scrollbar_2_text"
+	>Lorem ipsum dolor sit amet.</string>
+	<string
+		name="scrollbar_3_text"
+	>The Android platform is a software stack for mobile devices including
+		an operating system, middleware and key applications. Developers can
+		create applications for the platform using the Android SDK.
+		Applications are written using the Java programming language and run
+		on Dalvik, a custom virtual machine designed for embedded use which
+		runs on top of a Linux kernel. If you want to know how to develop
+		applications for Android, you're in the right place. This site
+		provides a variety of documentation that will help you learn about
+		Android and develop mobile applications for the platform. An early
+		look at the the Android SDK is also available. It includes sample
+		projects with source code, development tools, an emulator, and of
+		course all the libraries you'll need to build an Android application.
+		What would it take to build a better mobile phone?</string>
+
+
+	<!-- EventListViewクラスに関する文字列変数 -->
+	<string
+		name="EventListView_name"
+	>予定リスト</string>
+	<string
+		name="DEventManagerOffLine_name"
+	>CMO</string>
+	<color
+		name="month_calendar_background"
+	>#aaaaac</color>
+	<color
+		name="weekday_font"
+	>#ffffff</color>
+	<color
+		name="day_back_ground"
+	>#e0e0e2</color>
+</resources>

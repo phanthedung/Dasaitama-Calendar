@@ -1,0 +1,45 @@
+<LinearLayout
+	android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:background="@drawable/description_back"
+	android:layout_height="wrap_content"
+>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="3dip"
+		android:paddingLeft="10dip"
+		android:textSize="20dip"
+		android:text="横田君の誕生日"
+		android:textColor="#000000"
+		android:id="@+id/title"
+	></TextView>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:gravity="right"
+		android:layout_width="fill_parent"
+	>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="3dip"
+			android:text="From:"
+			android:textColor="#000000"
+		></TextView>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="3dip"
+			android:id="@+id/time"
+			android:textColor="#000000"
+			android:text="2010/01/31 18:30"
+		></TextView>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/hiddenId"
+			android:visibility="gone"
+		></TextView>
+	</LinearLayout>
+</LinearLayout>

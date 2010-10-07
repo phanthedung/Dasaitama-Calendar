@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+>
+	<LinearLayout
+		android:id="@+id/selectLocationLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	>
+		<EditText
+			android:id="@+id/selectAddress"
+			android:hint="@string/selectAddress"
+			android:textSize="12sp"
+			android:layout_width="130px"
+			android:layout_height="45px"
+			android:layout_weight="1"
+			android:layout_marginTop="2dip" />
+		<Button
+			android:id="@+id/btnSearchAddress"
+			android:text="@string/btnSearchAddress"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<Button
+			android:id="@+id/btnSelectAddress"
+			android:text="@string/btnSelectAddress"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<com.google.android.maps.MapView
+		android:id="@+id/selectLocationMap"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:enabled="true"
+		android:clickable="true"
+		android:apiKey="@string/yokota_api" />
+</LinearLayout>

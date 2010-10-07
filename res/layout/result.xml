@@ -1,0 +1,38 @@
+
+<LinearLayout
+	android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+>
+	<RelativeLayout
+		android:id="@+id/RelativeLayout01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="2dip"
+	>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/result"
+			android:text="hogehoge"
+			android:textColor="#ffffff"
+		></TextView>
+		<Button
+			android:layout_height="wrap_content"
+			android:id="@+id/detail"
+			android:text="詳細"
+			android:layout_width="60dip"
+			android:layout_toLeftOf="@+id/deside"
+		></Button>
+		<Button
+			android:layout_height="wrap_content"
+			android:id="@+id/deside"
+			android:layout_gravity="right"
+			android:layout_width="60dip"
+			android:layout_alignParentRight="true"
+			android:text="決定"
+			android:layout_marginRight="3dip"
+		></Button>
+	</RelativeLayout>
+</LinearLayout>

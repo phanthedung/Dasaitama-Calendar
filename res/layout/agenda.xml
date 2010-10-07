@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+android:background="#8f97a3">
+	<TextView
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:textSize="15dip"
+		android:background="@drawable/bar"
+		android:layout_width="fill_parent"
+		android:gravity="center"
+	android:text="予定一覧"></TextView>
+	<ListView
+		android:layout_height="wrap_content"
+		android:id="@+id/day_list"
+		android:layout_width="fill_parent"
+	></ListView>
+</LinearLayout>

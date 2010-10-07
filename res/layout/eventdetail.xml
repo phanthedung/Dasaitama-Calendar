@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#8f97a3"
+>
+	<LinearLayout
+		android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent"
+		android:background="@drawable/bar"
+		android:layout_height="wrap_content"
+	>
+		<TextView
+			android:id="@+id/TextView01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="スケジュール詳細"
+			android:textColor="#000000"
+			android:textSize="15dip"
+		></TextView>
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="60dip"
+			android:layout_margin="3dip"
+			android:text="戻る"
+			android:id="@+id/back"
+		></Button>
+		<Button
+			android:layout_height="wrap_content"
+			android:text="削除"
+			android:id="@+id/delete"
+			android:layout_width="60dip"
+			android:layout_margin="3dip"
+			android:onClick="deleteEvent"
+		></Button><Button
+			android:layout_height="wrap_content"
+			android:layout_width="60dip"
+			android:layout_margin="3dip"
+			android:id="@+id/edit" android:onClick="editEvent" android:text="編集"></Button>
+	</LinearLayout>
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_margin="2dip"
+	>
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_height="wrap_content"
+			android:layout_margin="2dip"
+			android:layout_width="fill_parent"
+		>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="タイトル"
+				android:textColor="#ffffff"
+				android:textSize="15dip"
+				android:id="@+id/title"
+				android:padding="2dip"
+			></TextView>
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="2dip"
+				android:layout_margin="2dip"
+				android:layout_width="fill_parent"
+				android:background="@drawable/description_back"
+			>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="2dip"
+				>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="15dip"
+						android:text="From:"
+						android:textColor="#000000"
+					></TextView>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="MM"
+						android:textSize="15dip"
+						android:textColor="#000000" android:id="@+id/str_time_on_event_detail"></TextView>
+					
+					
+					
+					
+					
+					
+					
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="2dip"
+				>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="15dip"
+						android:text="To:"
+						android:textColor="#000000"
+						android:paddingRight="18dip"
+					></TextView>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="MM"
+						android:textSize="15dip"
+						android:textColor="#000000" android:id="@+id/fin_time_on_event_detail"></TextView>
+					
+					
+					
+					
+					
+					
+					
+				</LinearLayout>
+			</LinearLayout>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#ffffff"
+				android:textSize="15dip"
+				android:layout_margin="2dip"
+			android:text="出発地・目的地・ルート詳細"></TextView>
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_margin="2dip"
+				android:layout_width="fill_parent"
+				android:orientation="vertical"
+				android:background="@drawable/description_back" android:id="@+id/route_detail_on_event_detail">
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="2dip"
+				>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="出発地："
+						android:textSize="15dip"
+						android:paddingRight="2dip"
+						android:textColor="#000000"
+					></TextView>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/start"
+						android:text="設定されていません"
+						android:textSize="15dip"
+						android:textColor="#000000"
+					></TextView>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="2dip"
+				>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingRight="2dip"
+						android:text="目的地："
+						android:textSize="15dip"
+						android:textColor="#000000"
+					></TextView>
+					<TextView
+						android:id="@+id/finish"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="設定されていません"
+						android:textSize="15dip"
+						android:textColor="#000000"
+					></TextView>
+				</LinearLayout><LinearLayout android:layout_height="wrap_content" android:id="@+id/route" android:layout_width="fill_parent">
+				
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="15dip" android:padding="2dip" android:textColor="#000000" android:text="乗り換え情報："></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/route_text" android:textColor="#000000" android:text="ルートが設定されていません"></TextView>
+
+
+</LinearLayout><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="必要時間など：" android:textColor="#000000"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ルートが設定されていません" android:textColor="#000000" android:id="@+id/needed_time"></TextView></LinearLayout>
+			</LinearLayout>
+			
+			
+						
+			
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#ffffff"
+				android:textSize="15dip"
+				android:padding="2dip"
+				android:text="徒歩案内">
+				</TextView>
+			<Button android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/route_to_finish_location" android:textColor="#000000" android:onClick="routeToFinishLocation" android:text="現在地から目的地" android:layout_width="fill_parent">
+				</Button><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="id!" android:visibility="invisible" android:id="@+id/event_detail_hidden_id"></TextView>
+			
+			
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

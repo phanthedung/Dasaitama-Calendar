@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="jp.ac.keio.sfc.crew.dasaitama"
+	android:versionCode="1"
+	android:versionName="1.0"
+>
+	<uses-permission
+		android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission
+		android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+	<uses-permission
+		android:name="android.permission.CALL_PHONE" />
+	<uses-permission
+		android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	<user-permission
+		android:name="android.ACCESS_COARSE_LOCATION" />
+	<uses-permission
+		android:name="android.permission.INTERNET" />
+	<uses-permission
+		android:name="android.permission.READ_CALENDAR" />
+	<uses-permission
+		android:name="android.permission.WRITE_CALENDAR" />
+	<application
+		android:label="@string/app_name"
+		android:icon="@drawable/icon"
+	>
+		<uses-library
+			android:name="com.google.android.maps" />
+		<activity
+			android:name=".Main"
+			android:label="@string/app_name"
+		>
+			<intent-filter>
+				<action
+					android:name="android.intent.action.MAIN" />
+				<category
+					android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".activity.SelectLocationActivity"
+			android:label="@string/selectLocationAct_name"
+		>
+		</activity>
+		<activity
+			android:name=".activity.RouteGuideActivity"
+			android:label="@string/viewRouteAct_name"
+		>
+		</activity>
+		<activity
+			android:name=".activity.MonthActivity"
+			android:label="@string/MonthViewAct_name"
+		>
+		</activity>
+		<activity
+			android:name=".activity.DayActivity"
+			android:label="@string/DayViewAct_name"
+		>
+		</activity>
+		<activity
+			android:name=".activity.AgendaActivity"
+			android:label="@string/EventListView_name"
+		>
+		</activity>
+		<activity
+			android:name=".activity.AddEventActivity"
+			android:label="@string/EventListView_name"
+		>
+		</activity>
+		<activity
+			android:name=".activity.EventDetailActivity"
+			android:label="@string/EventListView_name"
+		>
+		</activity>
+		<activity
+			android:name=".activity.SearchTransitActivity"
+			android:label="@string/EventListView_name"
+		>
+		</activity>
+	</application>
+	<uses-sdk
+		android:minSdkVersion="4" />
+	<uses-permission
+		android:name="android.permission.ACCESS_NETWORK_STATE"
+	></uses-permission>
+</manifest>

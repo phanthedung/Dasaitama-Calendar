@@ -1,0 +1,44 @@
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+>
+	<RadioGroup
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:id="@+id/locations_radio_group"
+		android:layout_width="fill_parent"
+		android:gravity="center_horizontal"
+		android:checkedButton="@+id/start_location_radio"
+	>
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="出発地点"
+			android:id="@+id/start_location_radio"
+		></RadioButton>
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="目的地"
+			android:id="@+id/goal_location_radio"
+		></RadioButton>
+	</RadioGroup>
+	<Button
+		android:layout_height="wrap_content"
+		android:id="@+id/deside_locaiton"
+		android:background="@drawable/description_back"
+		android:layout_width="fill_parent"
+		android:layout_margin="3dip"
+		android:text="GoogleMapから検索"
+	></Button>
+	<Button
+		android:layout_height="wrap_content"
+		android:id="@+id/select_home"
+		android:layout_width="fill_parent"
+		android:background="@drawable/description_back"
+		android:text="自宅に設定"
+		android:layout_margin="3dip"
+	></Button>
+</LinearLayout>
